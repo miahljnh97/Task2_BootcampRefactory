@@ -22,10 +22,24 @@ namespace NUnitTest
         }
 
         [Test]
+        public void Test12()
+        {
+            var res12 = unitTest.Satu("lari pagi");
+            Assert.AreEqual(9, res12);
+        }
+
+        [Test]
         public void Test2()
         {
             var res2 = unitTest.Dua(30);
             Assert.AreEqual("E", res2);
+        }
+
+        [Test]
+        public void Test22()
+        {
+            var res22 = unitTest.Dua(75);
+            Assert.AreEqual("C", res22);
         }
 
         [Test]
@@ -36,6 +50,14 @@ namespace NUnitTest
         }
 
         [Test]
+        public void Test32()
+        {
+            var res32 = unitTest.Tiga(1032);
+            Assert.AreEqual("Genap", res32);
+        }
+
+
+        [Test]
         public void Test4()
         {
             var res4 = unitTest.Empat(1900);
@@ -43,10 +65,38 @@ namespace NUnitTest
         }
 
         [Test]
+        public void Test42()
+        {
+            var res42 = unitTest.Empat(2000);
+            Assert.AreEqual("Kabisat", res42);
+        }
+
+        [Test]
+        public void Test43()
+        {
+            var res43 = unitTest.Empat(2001);
+            Assert.AreEqual("Bukan Kabisat", res43);
+        }
+
+        [Test]
+        public void Test44()
+        {
+            var res44 = unitTest.Empat(2016);
+            Assert.AreEqual("Kabisat", res44);
+        }
+
+        [Test]
         public void Test5()
         {
             var res5 = unitTest.Lima(15);
             Assert.AreEqual("Remaja", res5);
+        }
+
+        [Test]
+        public void Test52()
+        {
+            var res52 = unitTest.Lima(32);
+            Assert.AreEqual("Dewasa", res52);
         }
 
         [Test]

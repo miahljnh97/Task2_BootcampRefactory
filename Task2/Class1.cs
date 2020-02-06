@@ -49,30 +49,43 @@ namespace Task2
 
         public string Empat(int n)
         {
-            string str = "";
-            if(n % 4 == 0)
+
+            //            string str = "";
+            //            if(n % 4 == 0)
+            //            {
+            //                if(n % 100 == 0)
+            //                {
+            //                    if(n % 400 == 0)
+            //                    {
+            //                        str = "Kabisat";
+            //;                    }
+            //                    else
+            //                    {
+            //                        str = "Bukan Kabisat";
+            //                    }
+            //                }
+            //                else
+            //                {
+            //                    str = "Kabisat";
+            //                }
+            //            }
+            //            else
+            //            {
+            //                str = "Bukan Kabisat";
+            //            }
+            //            return str;
+            bool y = DateTime.IsLeapYear(n);
+            var str = "";
+            if(y == true)
             {
-                if(n % 100 == 0)
-                {
-                    if(n % 400 == 0)
-                    {
-                        str = "Kabisat";
-;                    }
-                    else
-                    {
-                        str = "Bukan Kabisat";
-                    }
-                }
-                else
-                {
-                    str = "Bukan Kabisat";
-                }
+                str = "Kabisat";
             }
             else
             {
                 str = "Bukan Kabisat";
             }
             return str;
+
         }
 
         public string Lima(int umur)
